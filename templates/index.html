@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <a class="navbar-brand" href="#">Glaucoma vs No Glaucoma</a>
+    </nav>
+    <div class="container-fluid bg-3 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3"></div>
+
+                <div class="col-sm-6">
+                    <img src="https://placehold.it/150x80?text=IMAGE" id="selected-image" height="300px"
+                        max-height="300px" alt="Image">
+                </div>
+
+                <div class="col-sm-4"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <h3 id="predicted-data"></h3>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-6"><input class="btn btn-primary" id="image-selector" type="file"></div>
+                        <div class="col-sm-6"><button class="btn btn-primary" id="predict-button">Predict </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
